@@ -1,0 +1,195 @@
+$background : #000;
+$success: #27a776;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+#header{
+    padding: 10px 0px;
+    .icone-green{
+        background-color: transparent;
+        color: $success;
+        cursor: pointer;
+        font-size: 32px;
+        padding-right: 8px;
+    }
+    .navbar-brand{
+        font-size: 32px;
+    }
+    .nav-link{
+        color: rgba(255, 255, 255, 0.538);
+        padding: 0px 16px;
+        font-size: 14px;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            color: white;
+        }
+    }
+    .icones{
+        padding: 0 16px;
+        i{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.538);
+            padding: 0 10px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .dropdown-item{
+        transition: 0.1s ease-in-out;
+        &:hover{
+            background-color: #27a776;
+        }
+    }
+}
+main{
+    position: relative;
+    top:60px;
+    color: white;
+}
+#hero-section{
+    padding: 50px 0px;
+    .btn-success{
+        background-color: $success;
+        padding: 10px 90px;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            background-color: lighten($success, 5%)
+        }
+    }
+    p{
+        color: rgba(255, 255, 255, 0.538);
+    }
+    span{
+        position: relative;
+    }
+    span::before{
+        content: "";
+        position:absolute;
+        background-color: #27a776;
+        height: 40%;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+#gallery{
+    padding: 30px 0px;
+    .cards{
+        overflow: hidden;
+        margin-top: 20px;
+        position: relative;
+        border-radius: 10px;
+        
+        
+        .overlay{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.542);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.2s ease-in-out;  
+            .i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                color: gray;
+                transition: 0.2s ease-in-out;
+                i{
+                    cursor: pointer;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                #link{
+                    font-size: 30px;
+                }
+                
+            }
+            &:hover{
+                opacity: 1;
+            }   
+        }
+        &:hover img{
+            transform: scale(1.05);
+            border-radius: 10px;
+        }
+    }
+    img{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;  
+    }
+
+}
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.383);
+    padding: 20px;
+    margin-top: 40px;
+    a{
+        color: $success;
+        text-decoration: none;
+        &:hover{
+            color: darken($success, 6%);
+        }
+    }
+}
+#contact1{
+    padding: 50px 0px;
+    h1{
+        font-size: 52px;
+    }
+    p{
+        color: rgb(178, 171, 171);
+        font-size: 18px;
+    }
+}
+#contact2{
+    .bg-dark{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        i{
+            color: $success;
+            scale: (1.4);
+        }
+    }
+    .col-lg-4{
+        &:hover .bg-dark{
+            background-color: $success;
+        }
+    }
+    input, textarea{
+        background-color: #161718;
+        color: white;
+        border: none;
+        outline: none;
+        &:focus{
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .btn-success{
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+        }
