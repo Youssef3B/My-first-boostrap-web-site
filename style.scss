@@ -165,6 +165,12 @@ footer{
         width: 40px;
         border-radius: 50%;
         margin-right: 10px;
+        &:hover{
+            background-color: $success !important;
+        }
+        &:hover i{
+            color: white;
+        }
         i{
             color: $success;
             scale: (1.4);
@@ -192,4 +198,166 @@ footer{
         margin: auto;
         margin-top: 20px;
     }
+
         }
+        #about1{
+            h1{
+                font-size: 50px;
+            }
+            .btn-success{
+                background-color: $success;
+                padding: 8px 40px;
+                
+            }
+            p{
+                color: #c6c6c6;
+                font-weight: 500;
+            }
+           
+        } 
+#about2{
+    margin-top: 60px;
+    h3{
+        color: $success;
+    }
+    .cards{
+        padding: 0px;
+        img{
+            width: 100%;
+        }
+    }
+    .d-flex{
+        margin-top: 10px;
+        i{
+            color: $success;
+            margin-right: 6px;
+        }
+    }
+    .fw-bolder{
+        color: #eaeaea;
+    }
+    
+}
+#testimonials1{
+    margin-top: 30px;
+    h4{
+        color: #717171;
+        font-size: 20px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100px;
+            top: 12px;
+            left: 160px;
+            background-color: $success;
+        }
+    }
+    h2{
+        font-size: 38px;
+    }
+}
+#testimonials2{
+    .cards{
+        background-color: #161718;
+        padding: 20px;
+        margin-top: 20px;
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        i{
+            color: #ffc107;
+            margin-top: 40px;
+        }
+        .fw-bold{
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        .fw-light{
+            color: #717171;
+        }
+    }
+    #tran{
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+}
+#services{
+    .cards{
+        background-color: #161718;
+        padding: 40px 20px;
+        margin-top: 40px;
+        position: relative;
+        transition: 0.4s ease-in-out;
+        z-index: 1;
+        height: 280px;
+        &:hover .overlay{
+            height: 100%;
+        }
+        &:hover .i2{
+            background-color: white;
+            color: #27a776;
+        }
+        .i2{
+            background-color: $success;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: 0.4s ease-in-out;
+            i{
+                font-size: 22px;
+            }
+        }
+        .overlay{
+            position: absolute;
+            background-color: #27a776;
+            top: 0;
+            left: 0;
+            height: 00%;
+            width: 100%;
+            transition: 0.4s ease-in-out;
+            z-index: -1;
+            
+        }
+    }
+}
+#prices{
+    margin-top: 10px;
+    .d-flex{
+        border-bottom: 1px dashed white;
+        margin-bottom: 10px;
+        h5{
+            color: #c6c6c6;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+#testimonials3{
+    margin-top: 30px;
+    h4{
+        color: #717171;
+        font-size: 20px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100px;
+            top: 12px;
+            left: 80px;
+            background-color: $success;
+        }
+    }
+    h2{
+        font-size: 38px;
+    }
+}
